@@ -1,3 +1,4 @@
+// se apeleaza functiile
 function changeProfile() {
 
 	NameToJob();
@@ -5,9 +6,11 @@ function changeProfile() {
 	oldToNewImage();
 	changeBodyBackgroundColor();
 }
+// se inlocuieste numele cu locul de munca visat dupa terminarea facultatii
 function NameToJob() {
 	document.getElementById("NumePrenume").innerHTML = "System Solution Engineer for (e-)Mobility (Cloud) Solutions";
 }
+//tabelul de educatie se inlocuieste cu alte realizări sau experiențe ideal de obținut in perioada facultăți
 function educationToAchievements() {
 	
 	var r1 = document.getElementById("realizare_r1");
@@ -29,6 +32,7 @@ function educationToAchievements() {
 	p3.innerHTML = "01.06.2023-24.09.2023";
 	l3.innerHTML = "https://www.studenttravel.ro/";
 }
+//se schimba poza care era inainte
 function oldToNewImage() {
 	var img = document.getElementById("pozadeprofil");
 	img.src = "poza2.jpg";
@@ -38,6 +42,7 @@ function oldToNewImage() {
     img.style.borderColor= '#78a6de';
 	img.style.right='100px';
 }
+// schimbare background
 function changeBodyBackgroundColor() {
 	var body = document.getElementById("body");
 	body.style.backgroundColor= "#b07287";
